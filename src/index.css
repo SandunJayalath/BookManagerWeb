@@ -156,13 +156,17 @@ div#filtering-container button {
     min-width: 330px;
   }
   .books-holder {
-    width: 98%;
+    width: 100%;
+    max-height: 55vh;
   }
   .book-card {
     width: 96%;
   }
   .book-card h5{
     font-size: 16px;
+  }
+  .books-holder::-webkit-scrollbar {
+    width: 3px;
   }
 }
 
@@ -231,11 +235,21 @@ button#read-button:hover {
 
 @media (max-width: 650px) {
   .footer-section {
-  position: absolute;
-  right: 0px;
-  align-items: flex-start;
-  bottom: 50px;
-}
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    bottom: 20px;
+  }
+  button#read-button {
+    font-size: 16px;
+    padding: 0px 3px;
+  }
+  .book-mark {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .vertical-line {

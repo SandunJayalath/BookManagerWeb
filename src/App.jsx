@@ -91,7 +91,7 @@ function App() {
                 <div style={{display: "flex", flex: "0 0 50%", justifyContent: "flex-end", gap: "10px"}}>
                     <button id="read-button" onClick={() => toggleReadStatus(index)}>
                       <>
-                      <BookmarkCheck /> {book.isRead ? "Read" : "Unread"}
+                      <BookmarkCheck className="book-mark" /> {book.isRead ? "Read" : "Unread"}
                       </>
                     </button> 
                     <button id="delete-button" onClick={() => deleteButton(index)}><Trash2/></button>
